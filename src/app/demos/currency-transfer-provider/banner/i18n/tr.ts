@@ -1,0 +1,27 @@
+export const locale = {
+  lang: 'tr',
+  data: {
+    CURRENCYTRANSFERPROVIDERBANNER: {
+      INTERNATIONAL: 'Uluslararası para birimi',
+      TRANSFER: 'transfer',
+      PROVIDER: 'sağlayıcı',
+      GREATEXCHANGE: 'Harika döviz kurları',
+      NOHIDDEN: 'Gizli ücret yok',
+      TRANSFERS: 'Transferler',
+      STARCUSTOMER: 'yıldızlı müşteri puanı',
+      AWARDWINNING: 'Ödüllü hizmet',
+      SEEHOWIT: 'Nasıl çalıştığını görün',
+      EXCHANGERATE: 'Döviz Kuru',
+      DELIVERYMETHOD: 'Teslimat Yöntemi',
+      BANKTRANSFER: 'Banka Havalesi',
+      SENDMONEY: 'Para Gönder',
+      INTERESTMONEY: 'Faiz Parası',
+      INVESTMONEY: 'Para Yatır',
+      YOUTRANSFER: 'Siz Transfer Edin',
+      RECIPIENTGETS: 'Alıcı Alır',
+      DELIVERYTIME: 'Teslimat Süresi',
+      WORKINGDAYS: 'Çalışma Günleri',
+      SENDNOW: 'Hemen Gönder',
+    },
+  },
+};

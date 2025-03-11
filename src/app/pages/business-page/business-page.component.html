@@ -1,0 +1,128 @@
+<app-page-banner />
+
+<div class="currency-transfer-provider-with-background-color">
+  <!-- Business Currency Transfers -->
+  <div class="ctp-currency-area ptb-70">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12">
+          <div
+            class="ctp-currency-image"
+            style="
+              background-image: url(images/currency-transfer-provider/currency.jpg);
+            "
+          ></div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="ctp-currency-content">
+            <h3>{{ "BUSINESSPAGEBUSINESS.BUSINESSCURRENCY" | translate }}</h3>
+            <p>{{ "BUSINESSPAGEBUSINESS.LOREM" | translate }}</p>
+            <p>{{ "BUSINESSPAGEBUSINESS.LOREM1" | translate }}</p>
+            <ul class="list">
+              <li>
+                <img
+                  src="images/currency-transfer-provider/circle-check.svg"
+                  alt="image"
+                />
+                {{ "BUSINESSPAGEBUSINESS.RECEIVE" | translate }}
+              </li>
+              <li>
+                <img
+                  src="images/currency-transfer-provider/circle-check.svg"
+                  alt="image"
+                />
+                {{ "BUSINESSPAGEBUSINESS.BUDGET" | translate }}
+              </li>
+              <li>
+                <img
+                  src="images/currency-transfer-provider/circle-check.svg"
+                  alt="image"
+                />
+                {{ "BUSINESSPAGEBUSINESS.MANAGE" | translate }}
+              </li>
+              <li>
+                <img
+                  src="images/currency-transfer-provider/circle-check.svg"
+                  alt="image"
+                />
+                {{ "BUSINESSPAGEBUSINESS.HIGHLY" | translate }}
+              </li>
+            </ul>
+            <div class="currency-btn">
+              <a routerLink="/signup" class="btn btn-primary">{{
+                "BUSINESSPAGEBUSINESS.REGISTER" | translate
+              }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Business Currency Transfers -->
+
+  <app-how-it-works />
+
+  <app-key-features />
+
+  <!-- How We Can Help -->
+  <div class="ctp-protecting-area pt-70 pb-45">
+    <div class="container">
+      <div class="section-title">
+        <h2>{{ "BUSINESSPAGEBUSINESS.HOWCAN" | translate }}</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6">
+          <div class="ctp-protecting-card">
+            <div class="content">
+              <div class="number">
+                <span>01</span>
+              </div>
+              <h3>{{ "BUSINESSPAGEBUSINESS.INCOMING" | translate }}</h3>
+              <p>{{ "BUSINESSPAGEBUSINESS.LOREM2" | translate }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="ctp-protecting-card">
+            <div class="content">
+              <div class="number color-two">
+                <span>02</span>
+              </div>
+              <h3>{{ "BUSINESSPAGEBUSINESS.OUTGOING" | translate }}</h3>
+              <p>{{ "BUSINESSPAGEBUSINESS.LOREM2" | translate }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="ctp-protecting-card">
+            <div class="content">
+              <div class="number color-two">
+                <span>03</span>
+              </div>
+              <h3>{{ "BUSINESSPAGEBUSINESS.RISK" | translate }}</h3>
+              <p>{{ "BUSINESSPAGEBUSINESS.LOREM2" | translate }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="ctp-protecting-card">
+            <div class="content">
+              <div class="number">
+                <span>04</span>
+              </div>
+              <h3>{{ "BUSINESSPAGEBUSINESS.ONLINE" | translate }}</h3>
+              <p>{{ "BUSINESSPAGEBUSINESS.LOREM2" | translate }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End How We Can Help -->
+
+  <app-money-transfer />
+
+  <div class="pt-70">
+    <app-faq />
+  </div>
+</div>

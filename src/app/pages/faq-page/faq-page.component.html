@@ -1,0 +1,123 @@
+<app-page-banner />
+
+<!-- FAQ -->
+<div class="faq-area ptb-70">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-12">
+        <div class="faq-content">
+          <h2>{{ "FAQPAGE.FREQUENTLY" | translate }}</h2>
+          <div class="bar"></div>
+          <p>{{ "FAQPAGE.LOREM" | translate }}</p>
+          <div class="faq-image">
+            <img src="images/faq.png" alt="image" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12">
+        <div class="faq-accordion">
+          <div
+            class="faq-item"
+            *ngFor="let item of accordionItems; let i = index"
+          >
+            <div
+              class="faq-header position-relative"
+              (click)="toggleAccordionItem(item)"
+            >
+              {{ item.titleKey | translate }}
+              <i
+                class="fa-solid"
+                [ngClass]="{ 'fa-plus': !item.open, 'fa-minus': item.open }"
+              ></i>
+            </div>
+            <div class="faq-content" [hidden]="!item.open">
+              <p>{{ item.contentKey | translate }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq-contact pt-70">
+      <div class="section-title">
+        <h2>{{ "FAQPAGE.DOYOUHAVE" | translate }}</h2>
+        <div class="bar"></div>
+        <p>{{ "FAQPAGE.LOREM" | translate }}</p>
+      </div>
+      <div class="faq-contact-form">
+        <form id="contactForm">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  required
+                  placeholder="{{ 'FAQPAGE.NAME' | translate }}"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group mb-3">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  required
+                  placeholder="{{ 'FAQPAGE.EMAIL' | translate }}"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  name="phone_number"
+                  id="phone_number"
+                  required
+                  class="form-control"
+                  placeholder="{{ 'FAQPAGE.PHONE' | translate }}"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="form-group mb-3">
+                <input
+                  type="text"
+                  name="msg_subject"
+                  id="msg_subject"
+                  class="form-control"
+                  required
+                  placeholder="{{ 'FAQPAGE.SUBJECT' | translate }}"
+                />
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+              <div class="form-group mb-3">
+                <textarea
+                  name="message"
+                  class="form-control"
+                  id="message"
+                  cols="30"
+                  rows="6"
+                  required
+                  placeholder="{{ 'FAQPAGE.YOURMESSAGE' | translate }}"
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+              <button type="submit" class="btn btn-primary">
+                {{ "FAQPAGE.SENDMESSAGE" | translate }}
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End FAQ -->
+
+<app-cta />

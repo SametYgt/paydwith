@@ -1,0 +1,305 @@
+<div
+  class="navbar-area"
+  [ngClass]="{
+    'is-sticky': isSticky,
+    'digital-banking': router.url === '/digital-banking',
+    'social-finance-route': router.url === '/social-finance-agency'
+  }"
+>
+  <div class="klob-nav">
+    <div
+      class="container"
+      [ngClass]="{ 'container-fluid': router.url === '/index-7' }"
+    >
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" routerLink="/">
+          <img style="width: 150px" src="images/paydwithlogo.png" alt="logo" />
+          <img style="width: 150px" src="images/paydwithlogo.png" alt="logo" />
+        </a>
+        <button (click)="toggleClass()" class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" [class.active]="classApplied">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                {{ "NAV.HOME" | translate }} <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a
+                    routerLink="/"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    class="nav-link"
+                  >
+                    {{ "NAV.BANKINGPAYMENTPROCESSING" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/loan-providers"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.LOANPROVIDERS" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/digital-banking"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.DIGITALBANKING" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/financial-service-provider"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.FINANCIALSERVICEPROVIDER" | translate }}
+                  </a>
+                </li>
+                <!-- <li class="nav-item">
+                                    <a routerLink="/index-5" routerLinkActive="active" class="nav-link">
+                                        Bankers & Entrepreneurs
+                                    </a>
+                                </li> -->
+                <li class="nav-item">
+                  <a
+                    routerLink="/social-finance-agency"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.SOCIALFINANCEAGENCY" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/currency-transfer-provider"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.CURRENCYTRANSFERPROVIDER" | translate }}
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a routerLink="/about" routerLinkActive="active" class="nav-link">
+                {{ "NAV.ABOUTUS" | translate }}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/features"
+                routerLinkActive="active"
+                class="nav-link"
+              >
+                {{ "NAV.FEATURES" | translate }}
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                {{ "NAV.PAGES" | translate }}
+                <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a
+                    routerLink="/about-2"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.ABOUTUS2" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/personal"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.PERSONAL" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/business"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.BUSINESS" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/how-it-works"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.HOWITWORKS" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/team"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.TEAM" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/error-404"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.ERRORPAGE" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/faq"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.FAQ" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/signin"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.SIGNIN" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/signup"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.SIGNUP" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/contact-2"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.CONTACNTUS2" | translate }}
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                routerLink="/pricing"
+                routerLinkActive="active"
+                class="nav-link"
+              >
+                {{ "NAV.PRICING" | translate }}
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a href="javascript:void(0)" class="nav-link">
+                {{ "NAV.BLOG" | translate }} <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item">
+                  <a
+                    routerLink="/blog-grid"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.BLOGGRID" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/blog-right-sidebar"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.BLOGRIGHTSIDEBAR" | translate }}
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    routerLink="/blog-details"
+                    routerLinkActive="active"
+                    class="nav-link"
+                  >
+                    {{ "NAV.BLOGDETAILS" | translate }}
+                  </a>
+                </li>
+              </ul>
+            </li> -->
+            <li class="nav-item">
+              <a
+                routerLink="/contact"
+                routerLinkActive="active"
+                class="nav-link"
+              >
+                {{ "NAV.CONTACT" | translate }}
+              </a>
+            </li>
+          </ul>
+
+          <div class="toolbar-separator"></div>
+
+          <button
+            mat-button
+            fxHide
+            fxShow.gt-xs
+            class="language-button nav-item"
+            [matMenuTriggerFor]="languageMenu"
+          >
+            <div class="language-container">
+              <img
+                class="flag mr-8"
+                [src]="'assets/icons/flags/' + selectedLanguage?.flag + '.png'"
+              />
+              <span class="iso text-uppercase">
+                {{ selectedLanguage?.id }}
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </div>
+          </button>
+
+          <mat-menu #languageMenu="matMenu">
+            <button
+              mat-menu-item
+              *ngFor="let lang of languages"
+              (click)="setLanguage(lang)"
+            >
+              <span class="language-item">
+                <img
+                  class="flag mr-16"
+                  [src]="'assets/icons/flags/' + lang.flag + '.png'"
+                />
+                <span class="iso">{{ lang?.title }}</span>
+              </span>
+            </button>
+          </mat-menu>
+
+          <div class="toolbar-separator" fxHide fxShow.gt-xs></div>
+
+          <div class="others-options">
+            <a routerLink="/signin" class="login-btn">
+              <i class="flaticon-user"></i> {{ "NAV.LOGIN" | translate }}
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>

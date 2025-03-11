@@ -1,0 +1,20 @@
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
+import { PaydwithTranslationLoaderService } from '../../../../public/services/translation-loader.service';
+import { locale as english } from './i18n/en';
+import { locale as turkish } from './i18n/tr';
+
+@Component({
+  selector: 'app-easy-payment',
+  imports: [RouterLink, TranslateModule],
+  templateUrl: './easy-payment.component.html',
+  styleUrl: './easy-payment.component.scss',
+})
+export class EasyPaymentComponent {
+  constructor(
+    private paydwithTranslationLoaderService: PaydwithTranslationLoaderService
+  ) {
+    this.paydwithTranslationLoaderService.loadTranslations(english, turkish);
+  }
+}

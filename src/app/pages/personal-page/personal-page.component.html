@@ -1,0 +1,85 @@
+<app-page-banner />
+
+<div class="currency-transfer-provider-with-background-color">
+
+    <div class="pt-70">
+        <app-services />
+    </div>
+
+    <!-- Personal Currency Transfers -->
+    <div class="ctp-currency-area pb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="ctp-currency-image"
+                        style="background-image: url(images/currency-transfer-provider/currency.jpg);"
+                    ></div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="ctp-currency-content">
+                        <h3>{{ "PERSONALPAGEPERSONAL.PERSONALCURRENCY" | translate }}</h3>
+                        <p>{{ "PERSONALPAGEPERSONAL.LOREM" | translate }}</p>
+                        <p>{{ "PERSONALPAGEPERSONAL.LOREM1" | translate }}</p>
+                        <ul class="list">
+                            <li> 
+                                <img src="images/currency-transfer-provider/circle-check.svg" alt="image"> 
+                                {{ "PERSONALPAGEPERSONAL.REGULARPAYMENTS" | translate }}
+                            </li>
+                            <li>
+                                <img src="images/currency-transfer-provider/circle-check.svg" alt="image"> 
+                                {{ "PERSONALPAGEPERSONAL.EMIGRATION" | translate }}
+                            </li>
+                            <li>
+                                <img src="images/currency-transfer-provider/circle-check.svg" alt="image"> 
+                                {{ "PERSONALPAGEPERSONAL.SENDINGMONEY" | translate }}
+                            </li>
+                            <li>
+                                <img src="images/currency-transfer-provider/circle-check.svg" alt="image"> 
+                                {{ "PERSONALPAGEPERSONAL.EXCELLENT" | translate }}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Personal Currency Transfers -->
+
+    <app-money-transfer />
+
+    <div class="pt-70">
+        <app-protecting-your-money />
+    </div>
+
+    <!-- Receive money from all over the world -->
+    <div class="ctp-world-area pb-70">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="ctp-world-content">
+                        <h3>{{ "PERSONALPAGEPERSONAL.RECEIVE" | translate }}</h3>
+                        <div class="world-inner-card">
+                            <h4>{{ "PERSONALPAGEPERSONAL.GETPAID" | translate }}</h4>
+                            <p>{{ "PERSONALPAGEPERSONAL.LOREM2" | translate }}</p>
+                        </div>
+                        <div class="world-inner-card">
+                            <h4>{{ "PERSONALPAGEPERSONAL.CONVERT" | translate }}</h4>
+                            <p>{{ "PERSONALPAGEPERSONAL.LOREM3" | translate }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div
+                        class="ctp-world-image"
+                        style="background-image: url(images/currency-transfer-provider/world.jpg);"
+                    ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Receive money from all over the world -->
+
+    <app-popular-countries />
+
+</div>

@@ -1,0 +1,26 @@
+export const locale = {
+  lang: 'en',
+  data: {
+    CONTACTPAGETWO: {
+      GETINTOUCH: 'Get In Touch With Us',
+      FIRSTNAME: 'First name',
+      SURNAME: 'Surname',
+      EMAIL: 'Email',
+      TELEPHONE: 'Telephone',
+      SUBJECT: 'Subject',
+      MESSAGE: 'Message',
+      WRITEMESSAGE: 'Write message here',
+      SENDUS: 'Send Us Your Enquiry',
+      OURCONTACT: 'Our Contact Details',
+      ADDRESS: 'Address',
+      PERSONAL: 'Personal',
+      PHONE: 'Phone',
+      BUSINESS: 'Business',
+      OFFICE: 'Office Opening Hours',
+      MONDAY: 'Monday',
+      THURSDAY: 'Thursday',
+      FRIDAY: 'Friday',
+      SATURDAY: 'Saturday',
+    },
+  },
+};

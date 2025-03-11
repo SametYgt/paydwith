@@ -1,0 +1,31 @@
+export const locale = {
+  lang: 'en',
+  data: {
+    SERVICES: {
+      FREELANCERS: 'Freelancers, entrepreneurs, and sole traders',
+      LOREM:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      LI1: 'Free plan available',
+      LI2: 'Full data privacy compliance',
+      LI3: '100% transparent costs',
+      LI4: 'Commitment-free',
+      LI5: 'Real-time spending overview',
+      LI6: 'Debit Mastercard included',
+      SMALLTOMEDIUM: 'Small- to medium-sized businesses',
+      P: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+      LI7: 'Easy transfers',
+      LI8: 'Deposit checks instantly',
+      LI9: 'A powerful open API',
+      LI10: 'Coverage around the world',
+      LI11: 'Business without borders',
+      LI12: 'Affiliates and partnerships',
+      LARGEORENTERPRISE: 'Large or enterprise level businesses',
+      LI13: 'Corporate Cards',
+      LI14: 'International Payments',
+      LI15: 'Automated accounting',
+      LI16: 'Request Features',
+      LI17: 'Premium Support',
+      LI18: 'Direct Debit',
+    },
+  },
+};

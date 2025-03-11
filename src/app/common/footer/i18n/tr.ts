@@ -1,0 +1,31 @@
+export const locale = {
+  lang: 'tr',
+  data: {
+    FOOTER: {
+      LOREM:
+        'Quis ipsum suspendisse ultrices gravida commodo. Risus commodo veliliee vel viverra maecenas accumsan lacus vel facilisis.',
+      COMPANY: 'Şirket',
+      ABOUTUS: 'Hakkımızda',
+      SERVICES: 'Hizmetler',
+      FEATURES: 'Özellikler',
+      OURPRICING: 'Fiyatlandırmamız',
+      LATESTNEWS: 'Son Haberler',
+      SUPPORT: 'Destek',
+      FAQS: "FAQ's",
+      PRIVACYPOLICY: 'Gizlilik Politikası',
+      TERMSCONDITIONS: 'Şartlar ve Koşullar',
+      COMMUNITY: 'Topluluk',
+      CONTACTUS: 'Bizimle İletişime Geçin',
+      ADDRESS: 'Adres',
+      LOCATION: 'Konum:',
+      PHONE: 'Telefon:',
+      PAYDWITHISPROUDLY: 'Paydwith Gururla Sahip Olunan',
+      ENVYTHEME: 'EnvyTheme',
+      FINDUSON: 'Bizi sosyal medyada bulun',
+      HOWITWORKS: 'Nasıl çalışır',
+      MOBILEAPP: 'Mobil uygulamalar',
+      REVIEWS: 'İncelemeler',
+      NEEDHELP: 'Yardıma mı ihtiyacınız var?',
+    },
+  },
+};

@@ -1,0 +1,23 @@
+<div
+  class="main-banner position-relative z-1"
+  (window:scroll)="onWindowScroll()"
+>
+  <div class="d-table">
+    <div class="d-table-cell">
+      <div class="container">
+        <div class="main-banner-content">
+          <h1>{{ "BANNER.H1" | translate }}</h1>
+          <p>{{ "BANNER.P" | translate }}</p>
+          <a routerLink="/contact" class="btn btn-primary">{{
+            "BANNER.GETSTARTED" | translate
+          }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="bg-image"
+    style="background-image: url(images/main-banner1.jpg)"
+    [ngStyle]="{ 'background-position-y': backgroundPositionY + 'px' }"
+  ></div>
+</div>

@@ -1,0 +1,197 @@
+<div class="ctp-key-features-area ptb-70">
+  <div class="container">
+    <div class="section-title">
+      <h2>{{ "KEYFEATURES.MONEYTRANSFER" | translate }}</h2>
+    </div>
+    <div class="ctp-key-features-tabs">
+      <ul class="nav nav-tabs">
+        <li class="nav-item" [ngClass]="{ active: currentTab === 'tab1' }">
+          <button
+            class="nav-link"
+            type="button"
+            (click)="switchTab($event, 'tab1')"
+          >
+            {{ "KEYFEATURES.SECURITY" | translate }}
+          </button>
+        </li>
+        <li class="nav-item" [ngClass]="{ active: currentTab === 'tab2' }">
+          <button
+            class="nav-link"
+            type="button"
+            (click)="switchTab($event, 'tab2')"
+          >
+            {{ "KEYFEATURES.COST" | translate }}
+          </button>
+        </li>
+        <li class="nav-item" [ngClass]="{ active: currentTab === 'tab3' }">
+          <button
+            class="nav-link"
+            type="button"
+            (click)="switchTab($event, 'tab3')"
+          >
+            {{ "KEYFEATURES.SPEED" | translate }}
+          </button>
+        </li>
+        <li class="nav-item" [ngClass]="{ active: currentTab === 'tab4' }">
+          <button
+            class="nav-link"
+            type="button"
+            (click)="switchTab($event, 'tab4')"
+          >
+            {{ "KEYFEATURES.ACCESSIBILITY" | translate }}
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade" *ngIf="currentTab === 'tab1'">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-12">
+              <div
+                class="ctp-key-features-image"
+                style="
+                  background-image: url(images/currency-transfer-provider/key-features.jpg);
+                "
+              ></div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+              <div class="ctp-key-features-content">
+                <p>{{ "KEYFEATURES.LOREM" | translate }}</p>
+                <p>{{ "KEYFEATURES.LOREM1" | translate }}</p>
+                <ul class="list">
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI1" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI2" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI3" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI4" | translate }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" *ngIf="currentTab === 'tab2'">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-12">
+              <div
+                class="ctp-key-features-image"
+                style="
+                  background-image: url(images/currency-transfer-provider/key-features.jpg);
+                "
+              ></div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+              <div class="ctp-key-features-content">
+                <p>{{ "KEYFEATURES.LOREM" | translate }}</p>
+                <p>{{ "KEYFEATURES.LOREM1" | translate }}</p>
+                <ul class="list">
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI1" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI2" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI3" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI4" | translate }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" *ngIf="currentTab === 'tab3'">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-12">
+              <div
+                class="ctp-key-features-image"
+                style="
+                  background-image: url(images/currency-transfer-provider/key-features.jpg);
+                "
+              ></div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+              <div class="ctp-key-features-content">
+                <p>
+                  {{ "KEYFEATURES.LOREM" | translate }}
+                </p>
+                <p>
+                  {{ "KEYFEATURES.LOREM1" | translate }}
+                </p>
+                <ul class="list">
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI1" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI2" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI3" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI4" | translate }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" *ngIf="currentTab === 'tab4'">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-12">
+              <div
+                class="ctp-key-features-image"
+                style="
+                  background-image: url(images/currency-transfer-provider/key-features.jpg);
+                "
+              ></div>
+            </div>
+            <div class="col-lg-7 col-md-12">
+              <div class="ctp-key-features-content">
+                <p>{{ "KEYFEATURES.LOREM" | translate }}</p>
+                <p>{{ "KEYFEATURES.LOREM1" | translate }}</p>
+                <ul class="list">
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI1" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI2" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI3" | translate }}
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    {{ "KEYFEATURES.LI4" | translate }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

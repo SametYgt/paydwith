@@ -1,0 +1,238 @@
+<!-- Default Footer -->
+<footer
+  class="footer-area"
+  [ngClass]="{
+    'd-none':
+      router.url === '/index-7' ||
+      router.url === '/personal' ||
+      router.url === '/business' ||
+      router.url === '/how-it-works' ||
+      router.url === '/about-2' ||
+      router.url === '/contact-2'
+  }"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="single-footer-widget">
+          <div class="logo">
+            <a routerLink="/">
+              <img
+                style="width: 150px"
+                src="images/paydwithlogo.png"
+                alt="logo"
+              />
+            </a>
+            <p>{{ "FOOTER.LOREM" | translate }}</p>
+          </div>
+          <ul class="social-links">
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="single-footer-widget pr-5">
+          <h3>{{ "FOOTER.COMPANY" | translate }}</h3>
+          <ul class="list">
+            <li>
+              <a routerLink="/">{{ "FOOTER.ABOUTUS" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.SERVICES" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.FEATURES" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.OURPRICING" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.LATESTNEWS" | translate }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="single-footer-widget">
+          <h3>{{ "FOOTER.SUPPORT" | translate }}</h3>
+          <ul class="list">
+            <li>
+              <a routerLink="/">{{ "FOOTER.FAQS" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.PRIVACYPOLICY" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.TERMSCONDITIONS" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.COMMUNITY" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.CONTACTUS" | translate }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="single-footer-widget">
+          <h3>{{ "FOOTER.ADDRESS" | translate }}</h3>
+          <ul class="footer-contact-info">
+            <li>
+              <span>{{ "FOOTER.LOCATION" | translate }}</span> 27 Division St,
+              New York, NY 10002, USA
+            </li>
+            <li>
+              <span>Email:</span>
+              <a href="mailto:Paydwith&#64;gmail.com">Paydwith&#64;gmail.com</a>
+            </li>
+            <li>
+              <span>{{ "FOOTER.PHONE" | translate }}</span>
+              <a href="tel:+321984754">+ (321) 984 754</a>
+            </li>
+            <li>
+              <span>Fax:</span> <a href="tel:+12129876543">+1-212-9876543</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <p>
+        ©{{ "FOOTER.PAYDWITHISPROUDLY" | translate }}
+
+        <a href="https://envytheme.com/" target="_blank">{{
+          "FOOTER.ENVYTHEME" | translate
+        }}</a>
+      </p>
+    </div>
+  </div>
+  <div class="map-image">
+    <img src="images/map.png" alt="map" />
+  </div>
+</footer>
+
+<!-- Optional Footer -->
+<footer
+  class="ctp-footer-area pt-70 d-none"
+  [ngClass]="{
+    'd-block':
+      router.url === '/index-7' ||
+      router.url === '/personal' ||
+      router.url === '/business' ||
+      router.url === '/how-it-works' ||
+      router.url === '/about-2' ||
+      router.url === '/contact-2'
+  }"
+>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="ctp-footer-widget">
+          <div class="logo">
+            <a routerLink="/">
+              <img
+                style="width: 150px"
+                src="images/paydwithlogo.png"
+                alt="logo"
+              />
+            </a>
+          </div>
+          <ul class="social-links">
+            <span>{{ "FOOTER.FINDUSON" | translate }}</span>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="ctp-footer-widget">
+          <h3>{{ "FOOTER.COMPANY" | translate }}</h3>
+          <ul class="links">
+            <li>
+              <a routerLink="/about-two">{{ "FOOTER.ABOUTUS" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/how-it-works">{{
+                "FOOTER.HOWITWORKS" | translate
+              }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.MOBILEAPP" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.REVIEWS" | translate }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="ctp-footer-widget">
+          <h3>{{ "FOOTER.SUPPORT" | translate }}</h3>
+          <ul class="links">
+            <li>
+              <a routerLink="/">{{ "FOOTER.TERMSCONDITIONS" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/">{{ "FOOTER.PRIVACYPOLICY" | translate }}</a>
+            </li>
+            <li>
+              <a routerLink="/contact-two">{{
+                "FOOTER.CONTACTUS" | translate
+              }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-md-6">
+        <div class="ctp-footer-widget">
+          <h3>{{ "FOOTER.NEEDHELP" | translate }}</h3>
+          <ul class="info">
+            <li>
+              <span>{{ "FOOTER.LOCATION" | translate }} </span>
+              27 Division St, New York, NY 10002, USA
+            </li>
+            <li>
+              <span>Email: </span>
+              <a href="mailto:paydwith&#64;gmail.com">paydwith&#64;gmail.com</a>
+            </li>
+            <li>
+              <span>Email: </span>
+              <a href="tel:321984754">+ (321) 984 754</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <p>
+        ©{{ "FOOTER.PAYDWITHISPROUDLY" | translate }}
+
+        <a href="https://envytheme.com/" target="_blank"
+          >{{ "FOOTER.ENVYTHEME" | translate }}
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>

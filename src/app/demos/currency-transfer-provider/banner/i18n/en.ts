@@ -1,0 +1,27 @@
+export const locale = {
+  lang: 'en',
+  data: {
+    CURRENCYTRANSFERPROVIDERBANNER: {
+      INTERNATIONAL: 'International currency',
+      TRANSFER: 'transfer',
+      PROVIDER: 'provider',
+      GREATEXCHANGE: 'Great exchange rates',
+      NOHIDDEN: 'No hidden fees',
+      TRANSFERS: 'Transfers',
+      STARCUSTOMER: 'star customer rating',
+      AWARDWINNING: 'Award-winning service',
+      SEEHOWIT: 'See how it works',
+      EXCHANGERATE: 'Exchange Rate',
+      DELIVERYMETHOD: 'Delivery Method',
+      BANKTRANSFER: 'Bank Transfer',
+      SENDMONEY: 'Send Money',
+      INTERESTMONEY: 'Interest Money',
+      INVESTMONEY: 'Invest Money',
+      YOUTRANSFER: 'You Transfer',
+      RECIPIENTGETS: 'Recipient Gets',
+      DELIVERYTIME: 'Delivery Time',
+      WORKINGDAYS: 'Working Days',
+      SENDNOW: 'Send Now',
+    },
+  },
+};
